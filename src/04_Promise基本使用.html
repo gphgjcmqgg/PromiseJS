@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>04_Promise基本使用</title>
+  <script>
+      // 1.创建一个新的Promise对象
+      const p = new Promise((resolve, reject) => { //执行器函数  // 同步回调
+          // 2. 执行异步任务
+          setTimeout(() => {
+
+          }, 1000)
+          // 3.1 如果成功了，调用resolve(value)
+
+          // 3.2 如果失败了，调用reject(reason)
+      })
+
+      p.then(
+        value => { // 接收得到成功的value数据 onResolved
+
+        },
+        reason => { // 接收得到失败的reason数据 onRejected
+
+
+        }
+      )
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
