@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>05_Promise问题</title>
+  <script>
+        new Promise((resolve, reject) => {
+          setTimeout(()=> {
+            resolve(1)  // 后改变的状态（同事指定数据），异步执行回调函数
+          },1000)
+        }).then( // 先指定回调函数，保存当前指定的回调函数
+          value => {
+            console.log(value)
+          },
+          reason => {
+            console.log(reason)
+          }
+        )
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
